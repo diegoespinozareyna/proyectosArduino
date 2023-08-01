@@ -1,47 +1,23 @@
 {
-  "[html]": {
-    "editor.formatOnSave": false
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/_site": true,
-    "**/node_modules": true
-  },
   "search.exclude": {
-    "**/node_modules": true,
-    "**_site": true
+    "**/.sst": true
   },
-  "cSpell.language": "en,es",
-  "cSpell.words": [
-    "alsw",
-    "Apóyanos",
-    "arduino",
-    "Chepe",
-    "dotfile",
-    "EEPROM",
-    "esp",
-    "esp32",
-    "esp8266",
-    "Flujograma",
-    "ingjuan",
-    "jekyll",
-    "mdns",
-    "mqtt",
-    "paty",
-    "Tiktok",
-    "versionamiento",
-    "versionar"
-  ],
-  "python.linting.pylintArgs": [
-    "--variable-naming=camelCase",
-    "--module-naming-style=camelCase",
-    "--const-naming-style=camelCase",
-    "--class-naming-style=PascalCase",
-    "--function-naming-style=camelCase",
-    "--attr-naming-style=camelCase",
-    "--argument-naming-style=camelCase",
-    "--variable-naming-style=camelCase",
-    "--class-attribute-naming-style=camelCase",
-    "--inlinevar-naming-style=camelCase"
-  ]
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
